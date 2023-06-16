@@ -9,7 +9,7 @@ import './index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
+  const nameArray = ['e', 'n', 'y', 's']
   const jobArray = [
     'w',
     'e',
@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container home-page">
+      <div className="container home-page" id='MainContainer'>
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
@@ -59,15 +59,15 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <h2>Front End Developer / UI/UX Designer /Shopify Developer</h2>
+         
         </div>
         <Logo />
+        
       </div>
-
+     
       <Loader type="pacman" />
+      
     </>
   )
 }

@@ -1,25 +1,49 @@
+
+
 html {
   font-size: 62.5%;
 }
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: #444;
+  font: 300 11px/1.4 'Coolvetica';
+  color: #8b8b8b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #022c43;
-  overflow: hidden;
-  display: block;
+  background: #FBFAF5;
+  display: flex;
+  min-height: 100vh;
+height: 100%;
+  scroll-snap-type: y mandatory ;
+ max-width: 100%;
+ overflow-x: hidden;
 }
 
 .dashboard {
   margin-top: 200px;
   margin-left: 200px;
+  
 }
 
 @media screen and (max-width: 1200px) {
   body {
     overflow: visible;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    font: 300 11px/1.4 'Coolvetica';
+    color: #8b8b8b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #FBFAF5;
+    display: flex;
+    min-height: 100vh;
+  height: 100%;
+    scroll-snap-type: y mandatory ;
+   max-width: 768px;
+   overflow-x: hidden;
   }
 }

@@ -1,0 +1,329 @@
+#containerAbotPage{
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  z-index: 9999999;
+  
+}
+
+.stage-cube-cont {
+  width: 50%;
+  height:40%;
+  top: 0;
+  padding-top: 18%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  margin-top: 83%;
+  
+
+}
+
+
+.cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+  
+
+  div {
+    position: absolute;
+    width: 200px;
+        height: 200px;
+    border: 1px solid #000000;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px rgba(2, 2, 2, 0.648);
+    
+  }
+
+  .face1 {
+    transform: translateZ(100px);
+    color: #dd0031;
+  }
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px);
+    color: #f06529;
+  }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    color: #28a4d9;
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    color: #5ed4f4;
+  }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    color: #efd81d;
+  }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+    color: #ec4d28;
+  }
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  33% {
+    transform: rotateY(-90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  
+  }
+
+}
+.myImage{
+  background-image: url(../../assets/images/Photo.png);
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px #001019;
+  order: 1;
+  height: 300px;
+  width: 300px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+  background-color :hsl(0, 0%, 96%) ;
+
+  margin-left: 200px;
+  margin-top: -400px;
+
+
+}
+
+@keyframes profile__animate{
+  0%{
+    border-radius:60% 40% 30% 70% /60% 30% 70% 40% ;
+  }
+  50%{
+    border-radius:30% 60% 70% 40% /50% 60% 30% 60% ;
+  }
+  100%{
+    border-radius:60% 40% 30% 70% /60% 30% 70% 40% ;
+  }
+}
+
+.About{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+  }
+
+
+  .hidden{
+  
+opacity: 0;
+transition: all 2.3s;
+filter: blur(5px);
+transform: translateX(100%);
+  }
+  .show
+  {opacity: 1;
+    filter: blur(0px);
+transform: translateX(0);
+
+  }
+  .h1{
+    color: #001019;
+     
+  }  
+  #text-zone2{
+    margin-left: 1000px;
+    margin-top: 65%;
+    width: 400px;
+    margin-right: 100px;
+    font-family: 'Coolvetica';
+    
+  }
+  .text-zone3{
+    padding-left: 230px;
+    margin-top: 25%;
+    width: 400px;
+    margin-right: 800px;
+
+  }
+  
+  @media screen and (max-width: 768px){
+  
+    .myImage{
+    margin-left: 10vh ;
+      }
+
+      #text-zone2{
+        margin-top: 65%;
+        width: 400px;
+        margin-right: 100px;
+        font-family: 'Coolvetica';
+        
+      }
+      .text-zone3{
+        padding-left: 12%;
+        margin-top: 25%;
+        width: 400px;
+        margin-right: 800px;
+    
+      }
+
+
+      .stage-cube-cont {
+        width: 50%;
+        height:40%;
+        top: 0;
+        padding-top: 18%;
+        margin-left: 0;
+        position: absolute;
+        right: 2vh;
+        overflow: hidden;
+        margin-top: 123%;
+        
+      
+      }
+      
+      #text-zone2{
+        margin: 47%;
+        font-size: 12vh;
+      }
+      #containerAbotPage{
+      margin-top: 60vh;
+       
+      }
+      
+
+}
+@media screen and (max-width: 576px){
+
+  .myImage{
+    margin-left: 8vh ;
+    margin-top: 0.001vh;
+      }
+
+      #text-zone2{
+        margin: 3%;
+        margin-top: 65vh;
+        margin-left: 31vh;
+        font-size: 12vh;
+      }
+
+      .stage-cube-cont {
+        width: 50%;
+        height:40%;
+        top: 0;
+        padding-top: 88%;
+        margin-left: 0;
+        position: absolute;
+        right: -5vh;
+        overflow: hidden;
+        margin-top: 123%;
+        
+      
+      }
+
+    }
+    @media screen and (max-width: 415px){
+      .myImage{
+        margin-left: 10vh ;
+          }
+    
+          #text-zone2{
+            margin-top: 65%;
+            width: 400px;
+            margin-right: 100px;
+            font-family: 'Coolvetica';
+            
+          }
+          .text-zone3{
+            padding-left: 12%;
+            margin-top: 25%;
+            width: 400px;
+            margin-right: 800px;
+        
+          }
+    
+    
+          .stage-cube-cont {
+            width: 50%;
+            height:40%;
+            top: 0;
+            padding-top: 18%;
+            margin-left: 0;
+            position: absolute;
+            right: 2vh;
+            overflow: hidden;
+            margin-top: 123%;
+            
+          
+          }
+          
+          #text-zone2{
+            margin: 47%;
+            font-size: 12vh;
+          }
+          #containerAbotPage{
+          margin-top: 60vh;
+           
+          }
+          
+    
+    }
+    @media screen and (max-width: 576px){
+    
+      .myImage{
+        margin-left: 39% ;
+        margin-top: 0.001vh;
+          }
+    
+          #text-zone2{
+            margin: 3%;
+            margin-top: 25vh;
+            margin-left: 45%;
+            font-size: 12vh;
+            width: 80%;
+          }
+    
+          .stage-cube-cont {
+            width: 100%;
+            height:50%;
+            top: 0;
+            padding-top: 88%;
+            margin-left: 0;
+            position: absolute;
+            right: -30%;
+            overflow: hidden;
+            margin-top: 200%;
+            
+          
+          }
+          .text-zone3{
+            padding-left: 46%;
+            margin-top: 25%;
+            width: 400px;
+            margin-right: 800px;
+        
+          }
+    
+    
+    }

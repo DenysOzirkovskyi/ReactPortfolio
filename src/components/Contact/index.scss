@@ -1,0 +1,231 @@
+.contact__container {
+  grid-template-columns: repeat(2,max-content);
+  justify-content: center;
+  column-gap: 6rem;
+  padding-bottom: 3rem;
+  padding-top: 132%;
+}
+
+.contact__title{
+  text-align: center;
+  font-size: 3vh;
+  font-weight: var(--font-large);
+  margin-bottom: var(--mb-1-5);
+  color: #0F52BA;
+}
+
+.contact__info{
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 300px;
+  
+}
+.contact__card{
+background-color: #e6e6e6;
+border: 3px solid rgba(0,0,0,0.1);
+
+border-radius: 0.75rem;
+text-align: center;
+
+}
+
+.contact__card-icon{
+font-size: 5vh;
+color: #001019;
+
+}
+.contact__card-title,
+.contact__card-data{
+  font-size: 3vh;
+  color: #001019;
+}
+.contact__card-title{
+  font-weight: var(--font-medium);
+  
+}
+
+.contact__card-data{
+  display: block;
+  margin-bottom: var(--mb-0-75);
+  
+}
+
+.contact__button{
+  color: #ffd700;
+  font-size: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration:wavy;
+  
+}
+
+#sendButton{
+  margin-top: 2.2vh;
+  color: black;
+}
+
+.contact__button-icon{
+  font-size: 3vh;
+  transition: 0.3s;
+  padding-bottom: 0.37vh;
+  text-decoration: none;
+
+}
+
+.contact__button:hover .contact__button-icon{
+  transform: translate(0.25rem);
+}
+
+.contact__form{
+  width: 360px;
+}
+.contact__form-div{
+  position: relative;
+  margin-bottom:3vh;
+  height: 4rem;
+  margin-top: 4vh;
+  
+}
+.contact__form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: none;
+  color: #001019;
+  outline: none;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  z-index: 1;
+  font-family: Coolvetica;
+
+}
+.contact__form-tag{
+  position: absolute;
+  top: -4.75rem;
+  left: 1.25rem;
+  font-size: 2.1vh;
+font-family: Coolvetica;
+  padding: 3vh;
+  z-index: 10;
+  color:#001019;
+  
+}
+
+.contact__form-area{
+  height: 11rem;
+}
+
+.contact__form-area textarea{
+  resize: none;
+}
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .contact__container{
+    column-gap: 3rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .contact__container{
+grid-template-columns: 1fr;
+row-gap: 3rem;
+}
+
+.contact__info{
+  justify-content: center;
+}
+
+.contact__form{
+  margin: 0 auto;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+
+.contact__info{
+  grid-template-columns: 1fr;
+}
+.contact__form{
+  width: 100%;
+}
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  
+}
+
+#contact{
+
+  margin-top:2800%;
+}
+
+*{
+  font-family: Coolvetica;
+
+}
+.contact__content{
+  font-family: Coolvetica;
+justify-content: center;
+align-items: center;
+}
+
+.content__form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: none;
+  color:#001019;
+  outline: none;
+  border-radius: 0.75rem;
+  padding: 0.1rem;
+  z-index: 1;
+  font-family: Coolvetica;
+}
+
+@media screen and (max-width: 768px){
+ 
+  .contact__container {
+    grid-template-columns: repeat(2,max-content);
+    justify-content: center;
+    column-gap: 6rem;
+    padding-bottom: 3rem;
+    padding-top: 242%;
+  }
+  
+
+
+  }
+  @media screen and (max-width: 576px){
+    .contact__container {
+      grid-template-columns: repeat(2,max-content);
+      justify-content: center;
+      column-gap: 6rem;
+      padding-bottom: 3rem;
+      padding-top: 362%;
+    }
+  }
+    @media screen and (max-width: 415px){
+      .contact__container {
+        grid-template-columns: repeat(1,max-content);
+        justify-content: center;
+        column-gap: 6rem;
+        padding-bottom: 3rem;
+        padding-top: 502%;
+      left: 14vh;
+      }
+
+        
+        
+    }
+  
